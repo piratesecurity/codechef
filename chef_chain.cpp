@@ -12,7 +12,11 @@ int main()
 		cin >> num_chains;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		int chains[num_chains];
+=======
+		int chains[num_chains],temp;
+>>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
 =======
 		int chains[num_chains],temp;
 >>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
@@ -27,6 +31,7 @@ int main()
 			{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			while (chains[x]>0 && x<num_chains)
 				{				
 				chains[x]--;
@@ -37,11 +42,16 @@ int main()
 =======
 =======
 >>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
+=======
+>>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
 				temp=(num_chains-x>chains[x])?chains[x]:num_chains-x;
 				num_chains-=temp;
 				x++;
 				sum+=temp;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
+=======
 >>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
 =======
 >>>>>>> f51b8c191c56d91548f80404fb1e03688f4c20a4
