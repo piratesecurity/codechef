@@ -1,0 +1,30 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+	{
+	int i,n,num_cases,sum,j,x,num_chains;
+	cin >>num_cases;
+	for (i=0;i<num_cases;i++)
+		{
+		sum=0;
+		cin >> n;
+		cin >> num_chains;
+		int chains[num_chains];
+		for (j=0;j<num_chains;j++) cin >> chains[j];
+		sort(chains,chains+num_chains);
+		x=0;
+		num_chains--;
+		while (x<num_chains)
+			{
+			while (chains[x]>0 && x<num_chains)
+				{				
+				chains[x]--;
+				sum++;
+				num_chains--;
+				}
+			x++;
+			}		
+		cout <<sum<<endl;
+		}
+	}
